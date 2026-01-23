@@ -45,7 +45,8 @@ public class Second_Largest {
         }
         return secondLargest;
     }
-
+    
+    // Optimal Approach
     public static int GetSecondLargest(int[] arr){
 
         int firstMax = Integer.MIN_VALUE;
