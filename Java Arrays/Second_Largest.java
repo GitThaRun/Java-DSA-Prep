@@ -23,6 +23,7 @@
 //   Since there is only one element in the array, it is both the largest and smallest element.  
 // Therefore, there is no second smallest or second largest element present.
 
+// Platform : Strivers SDE Sheet
 // Difficulty: Easy
 // Approaches:
 // 1)Brute Force -> Time : O(n logn), Space: O(1)
