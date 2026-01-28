@@ -68,6 +68,7 @@ public class Valid_votes {
                 map.put(votes[i],map.getOrDefault(votes[i],0)+1);
             }
         }
+        if(map.isEmpty()) return -1;
             int maxCount = 0;
             int winner = -1;
             boolean tie = false;
