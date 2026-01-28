@@ -38,7 +38,7 @@ public class Valid_votes {
             if(age[i] < 18) continue;
 
             int count = 0;
-            for(int j = 0;j < N;i++){
+            for(int j = 0;j < N;j++){
                 if(age[j] >= 18 && votes[j] == votes[i]){
                     count++;
                 }
@@ -80,7 +80,9 @@ public class Valid_votes {
                     winner = candidate;
                     tie = false;
                 }
-                else if(count == maxCount) return -1;
+                else if(count == maxCount) {
+                    tie = true;
+                }
             }
             return tie?-1 : winner;
     }
