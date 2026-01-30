@@ -10,7 +10,8 @@
 
 // Input: nums = [0]
 // Output: [0]
- 
+
+// Platform : Leetcode
 // Approaches : 
 // 1) Brute Force Approach : O(N), Space Complexity : O(N)
 // 2) Optimal Approach : Time Complexity : O(N), Space Complexity : O(1)
