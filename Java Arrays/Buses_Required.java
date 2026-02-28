@@ -8,6 +8,7 @@
 // 2 3 2 1
 // Output : 
 // 3
+// Time Complexity : O(N), Space Complexity : O(1)
 
 import java.util.Scanner;
 public class Buses_Required {
