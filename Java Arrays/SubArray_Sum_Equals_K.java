@@ -15,7 +15,7 @@
 // Level : Medium
 // Approaches : 
 // 1)BruteForce : Time Complexity : O(N ^ 2), Space Complexity : O(1)
-// 2)Optimal(Prefix Sum) : Time Complexity : , Space Complexity : 
+// 2)Optimal(Prefix Sum) : Time Complexity : O(N), Space Complexity : O(N)
 
 import java.util.HashMap;
 import java.util.Scanner;
