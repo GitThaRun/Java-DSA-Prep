@@ -25,8 +25,7 @@ A collection of **string-based DSA problems in Java** focused on interview prepa
 
 Each problem includes:
 - Java implementation  
-- Time & space complexity  
-- Approach explanation (in comments)  
+- Time & space complexity    
 
 ---
 
