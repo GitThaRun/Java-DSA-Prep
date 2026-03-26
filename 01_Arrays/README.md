@@ -1,16 +1,20 @@
 # Arrays
 
-This folder contains **interview-focused Array problems** solved in Java.
-The goal is to build strong patterns commonly used in coding rounds.
+Java solutions for interview-focused array problems.
 
 ---
 
-## ✅ Core Patterns Covered
+## 📌 Topics Covered
 
-- Hashing (HashMap / HashSet)
-- Two Pointers
-- Sliding Window
-- Prefix Sum (later)
-- Kadane’s Algorithm (later)
+- Two Pointers  
+- Sliding Window  
+- Prefix Sum  
+- Kadane’s Algorithm  
+- Hashing  
 
 ---
+
+
+## 🎯 Purpose
+
+Practice core array patterns commonly asked in coding interviews and build strong problem-solving fundamentals.
