@@ -1,0 +1,28 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Permutation_Of_String",
+      "request": "launch",
+      "mainClass": "Permutation_Of_String",
+      "projectName": "02_Strings_4094e4b7"
+    },
+    {
+      "type": "java",
+      "name": "Find_All_Anagrams",
+      "request": "launch",
+      "mainClass": "Find_All_Anagrams",
+      "projectName": "02_Strings_4094e4b7"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    }
+  ]
+}
