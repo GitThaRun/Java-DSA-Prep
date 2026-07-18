@@ -38,6 +38,7 @@ public class BinarySearch {
         return -1;
     }
 
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
