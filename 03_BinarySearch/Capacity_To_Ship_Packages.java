@@ -29,10 +29,7 @@ public class Capacity_To_Ship_Packages {
                 load = w;
             }
         }
-        if(days <= limit){
-            return true;
-        }
-        return false;
+        return days <= limit;
     }
     public static int shipWithinDays(int[] weights, int days) {
         
