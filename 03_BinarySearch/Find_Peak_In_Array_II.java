@@ -13,7 +13,7 @@
 // Time Complexity: O(m log(n)) or O(n log(m)), Space Complexity: O(1)
 
 public class Find_Peak_In_Array_II {
-     private static int findMax(int[][] mat,int n,int m,int col){
+     private static int findMax(int[][] mat,int m,int col){
         int max = -1, idx = -1;
 
         for(int i = 0;i < m;i++){
@@ -34,7 +34,7 @@ public class Find_Peak_In_Array_II {
         while(low <= high){
             int mid = low + (high - low) / 2;
 
-            int maxRowIdx = findMax(mat,n,m,mid);
+            int maxRowIdx = findMax(mat,m,mid);
 
             int left = mid - 1 >= 0?mat[maxRowIdx][mid - 1] : -1;
             int right = mid + 1 < n?mat[maxRowIdx][mid + 1] : -1;
