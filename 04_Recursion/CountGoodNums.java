@@ -15,36 +15,61 @@
 // Level : Medium
 // Approaches
 // 1)Brute : Time Complexity : O(N), Space : O(N)
-// 2)
+// 2)Optimal : Time Complexity : O(log n) , Space : O(1)
 public class CountGoodNums {
+
+    // Brute
     private static final long MOD = 1_000_000_007;
 
-    private static long count(int idx,int n){
-        if(idx == n) return 1;
+    // private static long count(int idx,int n){
+    //     if(idx == n) return 1;
 
-        long choices;
+    //     long choices;
 
-        if(idx % 2 == 0){
-            choices = 5;
-        }
-        else{
-            choices = 4;
-        }
+    //     if(idx % 2 == 0){
+    //         choices = 5;
+    //     }
+    //     else{
+    //         choices = 4;
+    //     }
 
-        long result = 0;
+    //     long result = 0;
 
-        for(int i = 0;i < choices;i++){
-            result = (result + count(idx + 1,n)) % MOD;
+    //     for(int i = 0;i < choices;i++){
+    //         result = (result + count(idx + 1,n)) % MOD;
+    //     }
+    //     return result;
+    // }
+    // public static int bruteCountGoodNumbers(int n){
+    //     return (int) count(0,n);
+    // }
+
+     private static long power(long base, long exp){
+        if(exp == 0) return 1;
+
+        long half = power(base,exp / 2);
+
+        long result = (half * half) % MOD;
+
+        if(exp % 2 == 1){
+            result = (result * base) % MOD;
         }
         return result;
     }
-    public static int bruteCountGoodNumbers(int n){
-        return (int) count(0,n);
+
+    public static long optimalCountGoodNumbers(int n){
+         long evenPos = (n + 1) / 2;
+        long oddPos = n / 2;
+
+        long evenWays = power(5,evenPos);
+        long oddWays = power(4,oddPos);
+
+        return (int) ((evenWays * oddWays) % MOD);
     }
-
     public static void main(String[] args) {
-        int n = 3;
+        int n = 5;
 
-        System.out.println(bruteCountGoodNumbers(n));
+        // System.out.println(bruteCountGoodNumbers(n));
+        System.out.println(optimalCountGoodNumbers(n));
     }
 }
