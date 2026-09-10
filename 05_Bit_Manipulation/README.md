@@ -46,7 +46,6 @@ Each problem generally contains:
 * Java solution
 * Time Complexity
 * Space Complexity
-* Explanation or dry run where necessary
 
 ## Language
 
