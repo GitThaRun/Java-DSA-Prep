@@ -17,7 +17,7 @@
 // Platform: LeetCode
 // Level : Hard
 // Approach 1 : Time Complexity: O(2n), Space Complexity: O(n)
-// Approach 2 : Time Complexity : , Space Complexity : 
+// Approach 2 : Time Complexity : O(n) , Space Complexity : O(1) 
 public class Candy {
     public static int bruteCandy(int[] ratings){
         int n = ratings.length;
