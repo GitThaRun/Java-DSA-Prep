@@ -8,7 +8,7 @@
 
 // Platform : LeetCode
 // Level : Medium
-// Time Complexity : O(n log n) , Space Complexity : O(n)
+// Time Complexity : O(n log n) , Space Complexity : O(1)
 
 import java.util.Arrays;
 
