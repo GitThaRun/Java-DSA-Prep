@@ -6,7 +6,7 @@
 // Platform : Leetcode
 // Level : Easy
 // Time Complexity : O(n), Space Complexity : O(1)
-
+// Time Complexity(Recurive Approach) : O(n), Space Complexity : O(n) 
 class ListNode {
     public int data;
     public ListNode next;
@@ -27,6 +27,8 @@ class ListNode {
     }
 };
 public class ReverseLL {
+
+    // Iterative approach
      public static ListNode reverseList(ListNode head) {
         ListNode temp = head;
         ListNode prev = null;
@@ -39,7 +41,17 @@ public class ReverseLL {
         }
         return prev;
      }
+    //Recursive Approach
+     public static ListNode recReverse(ListNode head){
+        if(head == null || head.next == null) return head;
 
+        ListNode newHead = recReverse(head.next);
+        ListNode front = head.next;
+        front.next = head;
+        head.next = null;
+
+        return newHead;
+     }
      public static void main(String[] args) {
          ListNode head = new ListNode(1);
          head.next = new ListNode(2);
@@ -47,8 +59,8 @@ public class ReverseLL {
          head.next.next.next = new ListNode(4);
          head.next.next.next.next = new ListNode(5);
 
-         head = reverseList(head);
-         
+        //  head = reverseList(head);
+         head = recReverse(head);
          ListNode temp = head;
          while(temp != null){
             System.out.print(temp.data + " ");
