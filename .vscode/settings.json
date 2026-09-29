@@ -1,1 +1,29 @@
-{}
+{
+    // ==========================================
+    // Java DSA Practice Configuration
+    // ==========================================
+
+    // Treat each Java file as an independent practice file.
+    "java.project.sourcePaths": [],
+
+    // Keep compiled .class files out of your source folders.
+    "java.project.outputPath": "bin",
+
+    // Don't try to build this as a conventional Java project.
+    "java.configuration.updateBuildConfiguration": "disabled",
+
+    // Don't complain about missing project dependencies.
+    "java.errors.incompleteClasspath.severity": "ignore",
+
+    // Disable automatic Java project import.
+    "java.import.gradle.enabled": false,
+    "java.import.maven.enabled": false,
+
+    // Don't automatically add package declarations.
+    "java.completion.importOrder": [
+        "java",
+        "javax",
+        "org",
+        ""
+    ]
+}
