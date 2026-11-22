@@ -18,18 +18,24 @@ public class CovertArrToDLL {
     private static Node convertToDll(int[] nums){
         Node head = new Node(nums[0]);
         Node prev = head;
-        for(int i = 0;i < nums.length;i++){
+        for(int i = 1;i < nums.length;i++){
             Node temp = new Node(nums[i],null,prev);
             prev.next = temp;
             prev = temp;
         }
         return head;
     }
+    private static void print(Node head){
+        while(head != null){
+            System.out.print(head.data + " ");
+            head = head.next;
+        }
+    }
     public static void main(String[] args) {
         int[] nums = {1,2,3,4,5};
 
         Node head = convertToDll(nums);
 
-        System.out.print(head.data);
+        print(head);
     }
 }
